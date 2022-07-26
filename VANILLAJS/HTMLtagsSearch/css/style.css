@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 730px;
+	margin: 0 auto;
+}
+#input {
+	width: 600px;
+}
+#btn {
+	width: 100px;
+}
+.search {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 400px;
+}

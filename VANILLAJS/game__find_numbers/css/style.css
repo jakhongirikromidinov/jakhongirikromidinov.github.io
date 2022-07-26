@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#input {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 170px;
+	width: 200px;
+}
+#input1 {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 200px;
+}
+#btn, #btn2 {
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#paragraph {
+	text-align: center;
+}
+.active {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+
+
+

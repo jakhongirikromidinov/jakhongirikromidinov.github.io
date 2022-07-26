@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+#test {
+	margin: 0 auto;
+	width: 900px;
+}
+input {
+	display: block;
+	margin: 0 auto;
+}
+p {
+	text-align: center;
+}
+#test div {
+	margin: 0 auto;
+}
+.right {
+	border: 1px solid green;
+	outline: none;
+}
+.wrong {
+	border: 1px solid red;
+	outline: none;
+}

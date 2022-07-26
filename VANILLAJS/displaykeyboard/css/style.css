@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+}
+#table {
+	margin: 0 auto;
+	margin-top: 150px;
+	
+}
+tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.hidden {
+	display: none;
+}
+.button {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+td {
+	margin: 3px;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid green;
+	border-radius: 10%;
+	min-width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.pressed {
+	background-color: green;
+}
+#input {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 700px;
+}
+#space {
+	width: 300px;
+}

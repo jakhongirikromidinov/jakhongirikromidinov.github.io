@@ -1,0 +1,124 @@
+@media (max-width: 575px) {
+    .container {
+        width: 530px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__logo {
+            width: 400px;
+                }
+        &__official {
+            margin-top: 30px;
+            font-size: 30px;
+            span {
+                font-size: 27px;
+                }
+                    }
+        &__contacts {
+            margin-top: 30px;
+            align-items: center;
+                    }
+        &__phone {
+            font-size: 30px;
+                }
+            }
+    .button {
+        width: 270px;
+        height: 45px;
+        border-radius: 14px;
+        font-size: 20px;
+        &_main {
+            font-size: 16px;
+                }
+        }
+    .promo {
+        padding: 40px 0 70px 0;
+        &__wrapper {
+            align-items: center;
+                    }
+        &__icons {
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+                }
+        &__icon {
+            display: flex;
+            margin-bottom: 40px;
+            font-size: 25px;
+            width: 100%;
+            span {
+                width: 230px;
+                }
+                }
+        &__img {
+                width: 20%;
+    }
+    }
+    .advantages {
+        padding: 70px 0 78px 0 ;
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+}
+    .consultation {
+        padding: 100px 0 90px 0;
+        &__descr {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+    .titles_white {
+        font-size: 30px;
+        text-align: center;
+    }
+    .feedform {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 40px;
+        
+    }
+    .button_submit {
+        margin: 0 auto;
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: 700px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__logo {
+            width: 500px;
+                }
+        &__official {
+            margin-top: 30px;
+            font-size: 35px;
+            span {
+                font-size: 31px;
+                }
+                    }
+        &__contacts {
+            margin-top: 30px;
+            align-items: center;
+                    }
+        &__phone {
+            font-size: 35px;
+                }
+            }
+    .button {
+        width: 300px;
+        height: 45px;
+        border-radius: 14px;
+        font-size: 25px;
+        &_main {
+            font-size: 16px;
+                }
+}
+}

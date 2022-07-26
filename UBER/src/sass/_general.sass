@@ -1,0 +1,393 @@
+header
+	position: relative
+	height: 50px
+	background-color: #212121
+
+nav
+	background-color: #212121
+	position: fixed
+	z-index: 5
+	width: 100%
+
+.hamburger
+	display: none
+
+.label
+	margin: 0 auto
+	padding: 5px 12px
+	width: 112px
+	height: 24px
+	font-size: 11px
+	font-weight: 100
+	text-align: center
+	text-transform: uppercase
+	&_white
+		background-color: white
+		color: black
+	&_black
+		background-color: black
+		color: white
+
+.title
+	font-size: 38px
+	margin-top: 38px
+	font-weight: bold
+	text-align: center
+	text-transform: uppercase
+	&_black
+		color: black
+	&_white
+		color: white
+
+.subtitle
+	margin-top: 19px
+	font-size: 17px
+	text-align: center
+	&_black
+		color: black
+	&_white
+		color: white
+
+
+.black
+	background-color: #000
+	color: white
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	&_item
+		list-style-type: none
+		border-right: 2px dotted black
+		padding-right: 29px
+		&:last-child
+			border-right: none
+		
+
+.menu_link
+	font-size: 15px
+	font-weight: 300
+	color: #fff
+	text-decoration: none
+
+.subheader
+	position: absolute
+	top: 50px
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	&_logo
+		margin-top: 16px
+	&_subtitle
+		margin-top: 6px
+		font-size: 13px
+		font-weight: 100
+		text-align: left
+		color: rgba(255, 255, 255, 0.5)
+	&_call
+		margin-top: 23px
+		font-size: 12px
+		font-weight: 300
+		text-align: right
+		color: #fff
+	&_phone
+		display: block
+		font-size: 22px
+		text-align: right
+		color: #fff
+		text-decoration: none
+		line-height: 24px
+
+.subheader_btn, .promo_btn
+	margin-top: 19px
+	width: 172px
+	height: 46px
+	box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+	border: none
+	border-radius: 4px
+	background-image: linear-gradient(to top, $main_color, #4ce2ff)
+	text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+	font-size: 14px
+	text-align: center
+	color: #fff
+	text-transform: uppercase
+	+btn_hover
+
+.promo
+	background: url(../img/header/background.jpg) center (center / cover) no-repeat
+	padding: 151px 0 135px
+	&_title
+		font-size: 58px
+		font-weight: bold
+		text-align: center
+		color: #fff
+	&_subtitle
+		font-size: 36px
+		margin-top: 10px
+		font-weight: bold
+		text-align: center
+		color: #fff
+	&_descr
+		margin-top: 23px
+		font-size: 18px
+		line-height: 24px
+		text-align: center
+		color: #fff
+	&_btn
+		display: block
+		margin: 0 auto
+		margin-top: 118px
+
+.advantages
+	padding: 71px 0 65px
+
+.item_round
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 26px
+	width: 113px
+	height: 113px
+	background-color: $main_color
+	border-radius: 50%
+
+.item_text
+	width: 341px
+
+.item_title
+	font-size: 17px
+	font-weight: normal
+	color: $main_color
+
+.item_descr
+	font-size: 15px
+	font-weight: 300
+	text-align: justify
+	color: #202020
+
+.advantages_item
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 35px
+
+.mobile
+	min-height: 864px
+	padding: 48px 0 80px
+	background: url(../img/opportunities_uber/background.jpg) center center / cover no-repeat
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		&_subtitle
+			font-size: 24px
+			line-height: 31px
+			text-align: center
+			color: #fff
+			text-transform: uppercase
+			padding: 91px 0px
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			width: 26px
+			height: 26px
+			background-color: #000
+			border-radius: 50%
+			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main_color
+				transition: 0.3s all
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				height: 14px
+				width: 2px
+				background-color: $main_color
+				position: absolute
+				transition: 0.3s all
+			&:hover
+				&::before, &::after
+					background-color: $second_color
+					
+		&_1
+			background: url(../img/opportunities/img_1.jpg) center center / cover no-repeat
+			margin-top: 32px
+		&_2
+			background: url(../img/opportunities/img_2.jpg) center center / cover no-repeat
+			margin-top: 32px
+		&_3
+			background: url(../img/opportunities/img_3.jpg) center center / cover no-repeat
+			margin-top: 32px
+		&_4
+			background: url(../img/opportunities/img_4.jpg) center center / cover no-repeat
+			margin-top: 19px
+		&_5
+			background: url(../img/opportunities/img_5.jpg) center center / cover no-repeat
+			margin-top: 19px
+		&_6
+			background: url(../img/opportunities/img_6.jpg) center center / cover no-repeat
+			margin-top: 19px
+.car
+	height: 896px
+	position: relative
+	&_black_bg
+		padding: 56px 0
+		height: 499px
+		background-color: #070716
+		width: 100%
+	&_white_bg
+		height: 397px
+		padding: 0 138px
+		background: url(../img/opportunities_uber/background.jpg) center center / cover no-repeat
+		&_descr
+			padding-top: 217px
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			text-align: center
+			color: #222
+	&_image
+		position: absolute
+		top: 231px
+		left: 50%
+		transform: translateX(-50%)
+
+.requirements
+	padding: 68px 0 74px
+	&_block
+		margin: 33px 0
+		&_title
+			font-size: 22px
+			font-weight: normal
+			color: #1ca8c3
+		&_subtitle
+			color: #1ca8c3
+		&_nmb
+			margin-bottom: 0px
+		&_list
+			margin-top: 22px
+			list-style-type: none
+			font-size: 17px
+			font-weight: 300
+			color: #222
+			padding-left: 50px
+			li
+				margin-bottom: 10px
+				position: relative
+				&::before
+					display: block
+					position: absolute
+					left: -32px
+					top: 3px
+					content: ''
+					width: 21px
+					height: 20px
+					background: url(../icons/conditions/tick.png) center center / cover no-repeat
+
+.requirements_block_red
+	.requirements_block_title
+		color: $second_color
+	.requirements_block_list
+		li
+			&:before
+				background: url(../icons/conditions/tick_red.png) center center / cover no-repeat	
+
+.world
+	min-height: 700px
+	padding: 50px 0 50px
+	background: url(../img/cities/world_map_bg.jpg) center center / cover no-repeat
+	&_link
+		text-align: center
+		margin-top: 486px
+		a
+			font-size: 15px
+			color: #1fbad6
+			text-transform: uppercase
+			text-decoration: none
+footer
+	// background-color: $main_color
+	padding: 14px 23px 39px 23px
+	
+.footer
+	&_line
+		margin: 0 auto
+		width: 300px
+		height: 4px
+		background-color: #1fbad6
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+		&_social
+			display: flex
+			height: 98px
+			justify-content: flex-start
+			align-items: center
+	&_wrapper>div
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: flex-end
+
+.center
+	&_1
+		display: flex
+		justify-content: space-around
+		a
+			font-size: 15px
+			font-weight: 300
+			color: #070716
+			text-transform: uppercase
+			text-decoration: none
+	&_2
+		display: flex
+		justify-content: space-between
+		margin-top: 12px
+		a
+			font-size: 11px
+			font-weight: 300
+			color: #999
+			text-transform: uppercase
+			text-decoration: none
+	&_3
+		text-align: center
+		margin-top: 17px
+		a
+			font-size: 11px
+			text-align: center
+			color: #1fbad6
+			text-decoration: none
+			text-transform: uppercase
+	
+.social_link_round
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 32px
+	height: 32px
+	margin-right: 9px
+	background-color: #070716
+	border-radius: 50%
+
+.store_link
+	height: 98px
+	display: flex
+	justify-content: center
+	align-items: center
+
+.xs-visible
+	display: none

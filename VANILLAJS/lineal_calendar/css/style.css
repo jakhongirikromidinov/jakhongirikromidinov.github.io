@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+ul {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+}
+li {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	min-width: 40px;
+	min-height: 40px;
+	border: 1px solid green;
+}
+.red {
+	border: 1px solid red;
+}
+a {
+	display: block;
+	text-decoration: none;
+}
+.header {
+	display: block;
+}
+header {
+	font-size: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.calendar {
+	margin: 0 auto;
+	margin-top: 55px;
+	width: 800px;
+}

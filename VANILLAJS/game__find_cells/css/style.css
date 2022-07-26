@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+.container {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+}
+#table {
+	margin: 0 auto;
+}
+#btn {
+	position: absolute;
+	top: 227px;
+    left: -88px;
+    width: 135px;
+    height: 49px;
+}
+td {
+	width: 48px;
+	height: 48px;
+	border: 1px solid black;
+}
+.red {
+	transition: all, 0.3s;
+	background-color: red;
+}
+.green {
+	transition: all, 0.3s;
+	background-color: green;
+}
+#timer {
+	display: block;
+	position: absolute;
+	right: -23px;
+	bottom: 224px;
+}
+.hidden {
+	display: none;
+}
+.defeat, .winClass {
+	position: absolute;
+	top: 212px;
+	left: 192px;
+	font-size: 80px;
+}
+.pChangePosition {
+	position: absolute;
+    top: 362px;
+    left: 332px;
+}
+
