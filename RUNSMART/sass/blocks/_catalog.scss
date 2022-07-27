@@ -1,11 +1,7 @@
 .catalog {
     padding-bottom: 100px;
     &__tab {
-<<<<<<< HEAD
         margin-top: 69px;
-=======
-        margin-top: 10px;
->>>>>>> bbf563832bd4c53b4844bf077eb50577d682ce48
         list-style-type: none;
         display: flex;
         justify-content: center;
@@ -49,12 +45,9 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-<<<<<<< HEAD
         &:not(.catalog__content_active) {
             display: none;
         }
-=======
->>>>>>> bbf563832bd4c53b4844bf077eb50577d682ce48
     }
     &-item {
         margin-bottom: 20px;
