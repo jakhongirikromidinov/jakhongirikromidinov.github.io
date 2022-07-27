@@ -9,12 +9,13 @@
 	margin: 0 auto;
 }
 
-@import "blocks/promo";
-@import "blocks/header";
+@import "blocks/_promo";
+@import "blocks/_header";
 @import "blocks/_buttons";
 @import "blocks/_advantages";
-@import "blocks/titles";
-@import "blocks/consultation";
+@import "blocks/_titles";
+@import "blocks/_consultation";
 @import "blocks/_forms";
-@import "blocks/carousel";
+@import "blocks/_carousel";
 @import "base/_media";
+@import "blocks/catalog";
