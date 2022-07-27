@@ -1,14 +1,30 @@
 .carousel {
     padding: 81px 0 82px 0;
     &__inner {
-        position: relative;
-        width: 750px;
+        display: flex;
+        justify-content: center;
+        min-height: 800px;
         margin: 0 auto;
+        position: relative;
     }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 3s all;
+    }
+    &__slide {
+        width: 100%;
+        img {
+            transition: 2s all;
+            width: 100%;
+        }
+    }
+
     .slick-prev {
         position: absolute;
-        top: 50%;
-        left: -66px;
+        bottom: 50%;
+        left: -120px;
         transform: translateY(-50%);
         border: none;
         background-color: #fff;
@@ -19,9 +35,9 @@
     }
     .slick-next {
         position: absolute;
-        top: 50%;
-        right: -66px;
+        bottom: 50%;
         transform: translateY(-50%);
+        right: -120px;
         border: none;
         background-color: #fff;
         img {
