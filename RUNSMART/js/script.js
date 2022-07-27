@@ -39,9 +39,13 @@ for (let i = 0; i < tabs.length; i++) {
         }
         contents[i].classList.add('catalog__content_active');
     });
+<<<<<<< HEAD
 };
 
 //Реализация возникновения окна "подробнее" при нажатии на ссылку в секции "каталог"
+=======
+});
+>>>>>>> bbf563832bd4c53b4844bf077eb50577d682ce48
 let moreLink = document.querySelectorAll('.catalog-item__link');
 let backLink = document.querySelectorAll('.catalog-item__back');
 
@@ -56,6 +60,7 @@ for (let link of moreLink) {
                 console.log('done');
                 this.parentElement.classList.remove('catalog-item__list_active');
                 this.parentElement.previousElementSibling.classList.add('catalog-item__content_active');
+<<<<<<< HEAD
             });
         };
     });
@@ -69,3 +74,9 @@ for (let link of moreLink) {
 //         nextArrow: '<button type="button" class="slick-next"><img src="icons/slider/right.png"></button>' 
 //     });
 // });
+=======
+            })
+        }
+    })
+}
+>>>>>>> bbf563832bd4c53b4844bf077eb50577d682ce48
