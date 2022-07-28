@@ -1,7 +1,8 @@
 //Реализация слайдера
-let next = document.querySelector('.slick-next');
-let prev = document.querySelector('.slick-prev');
-let slider = document.querySelector('.carousel__slide img');
+const carouselSection = document.querySelector('.carousel');
+let next = carouselSection.querySelector('.slick-next');
+let prev = carouselSection.querySelector('.slick-prev');
+let slider = carouselSection.querySelector('.carousel__slide img');
 
 let addresses = ['img/slider/slide_1.jpg', 'img/slider/slide_2.jpg', 'img/slider/slide_3.jpg'];
 
@@ -24,8 +25,9 @@ next.addEventListener('click', function toRight(event) {
 });
 
 //Реализация переключения вкладок в секции "каталог"
-const tabs = document.querySelectorAll('.catalog__tabs');
-const contents = document.querySelectorAll('.catalog__content');
+const calalogSection = document.querySelector('.catalog');
+const tabs = calalogSection.querySelectorAll('.catalog__tabs');
+const contents = calalogSection.querySelectorAll('.catalog__content');
 
 for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener('click', function() {
@@ -42,8 +44,8 @@ for (let i = 0; i < tabs.length; i++) {
 };
 
 //Реализация возникновения окна "подробнее" при нажатии на ссылку в секции "каталог"
-let moreLink = document.querySelectorAll('.catalog-item__link');
-let backLink = document.querySelectorAll('.catalog-item__back');
+let moreLink = calalogSection.querySelectorAll('.catalog-item__link');
+let backLink = calalogSection.querySelectorAll('.catalog-item__back');
 
 for (let link of moreLink) {
     link.addEventListener('click', function(event) {
@@ -60,6 +62,40 @@ for (let link of moreLink) {
         };
     });
 };
+//Реализация возникновения модального окна при нажатии на кнопки "Заказать звонок" и "Заказать консультацию";
+const consultationButtons = document.querySelectorAll('.button_book');
+const consultationOverLay = document.querySelector('#consultation');
+const closeButtons = document.querySelectorAll('.overlay__close');
+
+for (let button of consultationButtons) {
+    button.addEventListener('click', function() {
+        consultationOverLay.classList.add('active');
+
+        for (let button of closeButtons) {
+            button.addEventListener('click', function() {
+                consultationOverLay.classList.remove('active');
+            });
+        }
+    });
+};
+//Реализация возникновения модального окна при нажатии на кнопки "Купить";
+const buyButtons = document.querySelectorAll('.button_buy');
+const buyOverLay = document.querySelector('#booking');
+const buyOverLaySubtitle = document.querySelector('#buy_descr');
+
+for (let button of buyButtons) {
+    button.addEventListener('click', function() {
+        buyOverLay.classList.add('active');
+        buyOverLaySubtitle.innerHTML = this.parentElement.parentElement.children[1].innerHTML;
+        console.log(button.parentElement.parentElement.children[1].innerHTML);
+        for (let button of closeButtons) {
+            button.addEventListener('click', function() {
+                buyOverLay.classList.remove('active');
+            });
+        }
+    })
+}
+
 
 
 // $(document).ready(function(){
