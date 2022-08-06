@@ -14,10 +14,14 @@
         transition: 3s all;
     }
     &__slide {
-        width: 100%;
+        width: 550px;
+        min-height: 580px;
         img {
             transition: 2s all;
             width: 100%;
+            &:not(.active) {
+                display: none;
+            }
         }
     }
 

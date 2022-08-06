@@ -2,26 +2,34 @@
 const carouselSection = document.querySelector('.carousel');
 let next = carouselSection.querySelector('.slick-next');
 let prev = carouselSection.querySelector('.slick-prev');
-let slider = carouselSection.querySelector('.carousel__slide img');
-
-let addresses = ['img/slider/slide_1.jpg', 'img/slider/slide_2.jpg', 'img/slider/slide_3.jpg'];
+let slider = carouselSection.querySelectorAll('.carousel__slide img');
 
 let i = 0;
 
-prev.addEventListener('click', function toLeft(event) {
-    i--;
-    if (i == 0) {
-        i = 2;
+function removeActive() {
+    for (let slide of slider) {
+        slide.classList.remove('active');
     }
-    slider.src = addresses[i];
+}
+function changeSlide() {
+    slider[i].classList.add('active');
+}
+prev.addEventListener('click', function toLeft(event) {
+    removeActive();
+    if (i == 0) {
+        i = 3;
+    }
+    i--;
+    changeSlide();
 });
 
 next.addEventListener('click', function toRight(event) {
+    removeActive();
     i++;
     if (i == 3) {
         i = 0;
     }
-    slider.src = addresses[i];
+    changeSlide();
 });
 
 //Реализация переключения вкладок в секции "каталог"
@@ -31,7 +39,6 @@ const contents = calalogSection.querySelectorAll('.catalog__content');
 
 for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener('click', function() {
-        console.log('done');
         for (let tab of tabs) {
             tab.classList.remove('catalog__tabs_active');
         }

@@ -1,0 +1,23 @@
+.fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 2.0s;
+            animation-duration: 2.0s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.0s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    } to {
+        opacity: 1;
+    }
+}
